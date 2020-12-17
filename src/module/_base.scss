@@ -1,0 +1,28 @@
+@use 'module/_variables';
+// faccio il reset
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+// coloro tutto il testo col colore primario
+body{
+    color: $color_primary;
+}
+.myBtn{
+    @include row;
+    @include flexSpaceBeCenter;
+    padding: 3px 10px;
+    border: 1px solid $color_tertiary;
+    background-color: $color_tertiary;
+    border-radius: 5px;
+    color: white;
+    img{
+        width: 20px;
+        margin-right: 0.6rem;
+    }
+}
+a{
+    text-decoration: none;
+    color: $color_tertiary;
+}

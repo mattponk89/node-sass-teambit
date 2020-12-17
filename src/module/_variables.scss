@@ -1,0 +1,40 @@
+$color_primary: #58402c;
+$color_secondary: #ffe7d2;
+$color_tertiary: #2c4792;
+$max_width: 1200px;
+
+@mixin container {
+    max-width: $max_width;
+    margin: auto;
+}
+@mixin row{
+    display: flex;
+}
+@mixin flexCenterCenter{
+    justify-content: center;
+    align-items: center;
+}
+@mixin flexSpaceArCenter{
+    justify-content: space-around;
+    align-items: center;
+}
+@mixin flexSpaceBeCenter{
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin horizontal-list {
+  @include reset-list;
+
+  li {
+    display: inline-block;
+    margin: {
+      right: 2em;
+    }
+  }
+}
