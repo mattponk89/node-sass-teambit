@@ -1,4 +1,4 @@
-@use 'module/_variables';
+@use 'variables';
 // faccio il reset
 *{
     margin:0;
@@ -7,14 +7,15 @@
 }
 // coloro tutto il testo col colore primario
 body{
-    color: $color_primary;
+    color: variables.$color_primary;
 }
 .myBtn{
-    @include row;
-    @include flexSpaceBeCenter;
+    @include variables.flexCenterCenter;
+    margin-left: 5px;
+    margin-right: 5px;
     padding: 3px 10px;
-    border: 1px solid $color_tertiary;
-    background-color: $color_tertiary;
+    border: 1px solid variables.$color_tertiary;
+    background-color: variables.$color_tertiary;
     border-radius: 5px;
     color: white;
     img{
@@ -24,5 +25,5 @@ body{
 }
 a{
     text-decoration: none;
-    color: $color_tertiary;
+    color: variables.$color_tertiary;
 }

@@ -10,8 +10,10 @@ body {
 
 .myBtn {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  margin-left: 5px;
+  margin-right: 5px;
   padding: 3px 10px;
   border: 1px solid #2c4792;
   background-color: #2c4792;
@@ -29,9 +31,12 @@ a {
   color: #2c4792;
 }
 
-header nav {
+header {
   max-width: 1200px;
   margin: auto;
+}
+
+header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -68,7 +73,34 @@ header nav .navRight .myBtn {
 }
 
 header .jumbotron {
-  max-width: 1200px;
-  margin: auto;
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+}
+
+header .jumbotron .jumboLeft {
+  width: 50%;
+}
+
+header .jumbotron .jumboLeft p {
+  margin: 20px 0;
+}
+
+header .jumbotron .jumboLeft h6 {
+  margin: 10px 0;
+}
+
+header .jumbotron .jumboLeft div {
+  display: flex;
+  margin-top: 20px;
+}
+
+header .jumbotron .jumboRight {
+  width: 50%;
+  padding: 0 10px;
+}
+
+header .jumbotron .jumboRight img {
+  width: 100%;
 }
 

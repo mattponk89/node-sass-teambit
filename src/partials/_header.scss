@@ -1,0 +1,54 @@
+@use 'variables';
+
+header{
+    @include variables.container;
+    nav{
+        @include variables.flexSpaceBeCenter;
+        height: 80px;
+        border-bottom: 2px solid variables.$color_primary;
+
+        .navRight{
+            @include variables.row;
+
+            ul{
+                @include variables.flexSpaceBeCenter;
+                @include variables.horizontal-list;
+                a{
+                    color: variables.$color_primary;
+                }
+            }
+            .myBtn{
+                padding: 10px;
+                color: variables.$color_tertiary;
+                background-color: white;
+            }
+        }
+    }
+    .jumbotron{
+        @include variables.row;
+        width: 100%;
+        margin-top: 30px;
+        .jumboLeft{
+            width: 50%;
+            p{
+                margin: 20px 0;
+            }
+            h6{
+                margin: 10px 0;
+            }
+            div{
+                @include variables.row;
+                margin-top: 20px;
+            }
+
+        }
+        .jumboRight{
+            width: 50%;
+            padding: 0 10px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    
+}

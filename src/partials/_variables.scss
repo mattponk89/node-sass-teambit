@@ -11,14 +11,17 @@ $max_width: 1200px;
     display: flex;
 }
 @mixin flexCenterCenter{
+    @include row;
     justify-content: center;
     align-items: center;
 }
 @mixin flexSpaceArCenter{
+    @include row;
     justify-content: space-around;
     align-items: center;
 }
 @mixin flexSpaceBeCenter{
+    @include row;
     justify-content: space-between;
     align-items: center;
 }
@@ -37,4 +40,7 @@ $max_width: 1200px;
       right: 2em;
     }
   }
+}
+@mixin w50 {
+  width: calc(100% / 2);
 }
