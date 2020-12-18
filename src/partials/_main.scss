@@ -1,0 +1,27 @@
+@use 'variables';
+
+section.first-section{
+    background-color: variables.$color_secondary;
+    text-align: center;
+    padding: 20px 0;
+    .before{
+        border-bottom: 1px solid variables.$color_primary
+    }
+    .before,
+    .after{
+        padding: 20px;
+        margin: 20px 0;        
+    }
+    .img-small{
+        @include variables.flexSpaceArCenter;
+        margin: 25px 0;
+        img{
+            height: 100px;
+        }
+    }
+    .img-big{
+        width: 300px;
+        margin: 40px 0;
+    }
+
+}

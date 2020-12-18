@@ -9,6 +9,12 @@
 body{
     color: variables.$color_primary;
 }
+.container{
+    @include variables.container;
+}
+.row{
+    @include variables.row;
+}
 .myBtn{
     @include variables.flexCenterCenter;
     margin-left: 5px;

@@ -8,6 +8,15 @@ body {
   color: #58402c;
 }
 
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
 .myBtn {
   display: flex;
   justify-content: center;
@@ -79,7 +88,7 @@ header .jumbotron {
 }
 
 header .jumbotron .jumboLeft {
-  width: 50%;
+  width: calc(100% / 2);
 }
 
 header .jumbotron .jumboLeft p {
@@ -96,11 +105,43 @@ header .jumbotron .jumboLeft div {
 }
 
 header .jumbotron .jumboRight {
-  width: 50%;
+  width: calc(100% / 2);
   padding: 0 10px;
 }
 
 header .jumbotron .jumboRight img {
   width: 100%;
+}
+
+section.first-section {
+  background-color: #ffe7d2;
+  text-align: center;
+  padding: 20px 0;
+}
+
+section.first-section .before {
+  border-bottom: 1px solid #58402c;
+}
+
+section.first-section .before,
+section.first-section .after {
+  padding: 20px;
+  margin: 20px 0;
+}
+
+section.first-section .img-small {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 25px 0;
+}
+
+section.first-section .img-small img {
+  height: 100px;
+}
+
+section.first-section .img-big {
+  width: 300px;
+  margin: 40px 0;
 }
 

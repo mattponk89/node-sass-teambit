@@ -29,7 +29,7 @@ header{
         width: 100%;
         margin-top: 30px;
         .jumboLeft{
-            width: 50%;
+            @include variables.w50;
             p{
                 margin: 20px 0;
             }
@@ -43,7 +43,7 @@ header{
 
         }
         .jumboRight{
-            width: 50%;
+            @include variables.w50;
             padding: 0 10px;
             img{
                 width: 100%;
